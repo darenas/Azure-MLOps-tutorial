@@ -1,0 +1,9 @@
+entryScript: mbm_inference.py
+runtime: python
+condaFile: mbm_inference_conda_reqs.yml
+extraDockerfileSteps:
+schemaFile:
+sourceDirectory:
+enableGpu: False
+baseImage:
+baseImageRegistry:
