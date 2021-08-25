@@ -285,7 +285,7 @@ It contains 2 stages: Pre-prod then Prod
 
  
 ### IV. Credits
-This tutorial is a compilation from several tutorials:
+This tutorial is based on a compilation from several tutorials:
 - MLOps on Azure (https://github.com/microsoft/MLOps)
 - MLOps with Azure ML (https://github.com/Microsoft/MLOpsPython)
 - MLOps Lab (https://github.com/SaschaDittmann/MLOps-Lab)
