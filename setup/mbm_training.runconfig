@@ -1,0 +1,31 @@
+framework: Python
+communicator: None
+autoPrepareEnvironment: true
+maxRunDurationSeconds:
+nodeCount: 1
+environment:
+  name: iris_demo
+  python:
+    userManagedDependencies: false
+    interpreterPath: python
+    condaDependenciesFile: mbm_conda_reqs.yml
+    baseCondaEnvironment:
+  docker:
+    enabled: true
+    baseImage: mcr.microsoft.com/azureml/base:intelmpi2018.3-ubuntu16.04
+    sharedVolumes: true
+    gpuSupport: false
+    shmSize: 1g
+    arguments: []
+history:
+  outputCollection: true
+  snapshotProject: true
+  directoriesToWatch:
+  - logs
+dataReferences:
+  workspaceblobstore:
+    dataStoreName: workspaceblobstore
+    pathOnDataStore: iris
+    mode: download
+    overwrite: true
+    pathOnCompute: 
